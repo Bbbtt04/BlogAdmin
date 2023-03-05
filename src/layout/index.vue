@@ -30,7 +30,9 @@ watch(isCollapse, (val) => {
           <div class="main">
             <router-view v-slot="{ Component, route }">
               <transition appear name="fade-transform" mode="out-in">
-                  <component :is="Component" :key="route" />
+                <keep-alive :include="keepAliveStore.include">
+                  <component :is="Component" :key="route.path" />
+                </keep-alive>
               </transition>
             </router-view>
           </div>
