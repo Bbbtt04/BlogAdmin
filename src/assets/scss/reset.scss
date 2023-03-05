@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #999;
+}
+/* 进度条 */
+#nprogress .bar {
+  background: #009688 !important;
+}
+#nprogress .spinner-icon {
+  border-top-color: #009688 !important;
+  border-left-color: #009688 !important;
+}
