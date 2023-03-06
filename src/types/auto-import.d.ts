@@ -76,6 +76,7 @@ declare global {
   const useSlots: typeof import('vue')['useSlots']
   const useTable: typeof import('../hooks/useTable')['default']
   const useTheme: typeof import('../hooks/useTheme')['default']
+  const useThemeStore: typeof import('../store/modules/theme')['useThemeStore']
   const useUserStore: typeof import('../store/modules/user')['useUserStore']
   const useUserStoreWithOut: typeof import('../store/modules/user')['useUserStoreWithOut']
   const watch: typeof import('vue')['watch']

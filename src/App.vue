@@ -1,6 +1,8 @@
 <script setup>
 const { initTheme } = useTheme()
-initTheme()
+onMounted(() => {
+  initTheme()
+})
 </script>
 
 <template>

@@ -1,9 +1,9 @@
-import { GlobalStore } from '@/store'
+import { useThemeStore} from '@/store/modules/theme'
 import { getDarkColor, getLightColor } from '@/utils/theme/tool'
 
 // 初始化 theme
 export const useTheme = () => {
-  const globalStore = GlobalStore()
+  const globalStore = useThemeStore()
   const themeConfig = computed(() => globalStore.themeConfig)
 
   const changePrimaryColor = (color: string) => {

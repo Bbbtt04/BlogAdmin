@@ -16,7 +16,8 @@
     "baseUrl": "./",
     "paths": {
       "@/*": ["src/*"]
-    }
+    },
+    "allowJs":true
   },
   "include": [
     "src/**/*.ts",

@@ -4,6 +4,7 @@ import Storage from '@/utils/Storage'
 import Breadcrumb from '@/components/Breadcrumb/Breadcrumb.vue'
 import { ACCESS_TOKEN } from '@/utils/contants';
 
+const userStore = useUserStore()
 const router = useRouter()
 const emit = defineEmits(['toggleCollapse'])
 
@@ -34,7 +35,7 @@ const outLogin = () => {
       <el-dropdown trigger="click">
         <span class="el-dropdown-link">
           <icon-park-solid-user />
-          <span class="username">admin</span>
+          <span class="username">{{ userStore.username }}</span>
           <i class="el-icon-arrow-down el-icon--right" />
         </span>
         <template #dropdown>

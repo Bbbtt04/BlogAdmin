@@ -9,7 +9,6 @@ declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     BasicTable: typeof import('./../components/BasicTable/index.vue')['default']
     Breadcrumb: typeof import('./../components/Breadcrumb/Breadcrumb.vue')['default']
-    ColSetting: typeof import('./../components/ProTable/components/ColSetting.vue')['default']
     CountTo: typeof import('./../components/CountTo/index.vue')['default']
     ElAside: typeof import('element-plus/es')['ElAside']
     ElAvatar: typeof import('element-plus/es')['ElAvatar']
@@ -33,7 +32,6 @@ declare module '@vue/runtime-core' {
     ElInput: typeof import('element-plus/es')['ElInput']
     ElInputNumber: typeof import('element-plus/es')['ElInputNumber']
     ElLink: typeof import('element-plus/es')['ElLink']
-    ElLoading: typeof import('element-plus/es')['ElLoading']
     ElMain: typeof import('element-plus/es')['ElMain']
     ElMenu: typeof import('element-plus/es')['ElMenu']
     ElMenuItem: typeof import('element-plus/es')['ElMenuItem']
@@ -49,23 +47,14 @@ declare module '@vue/runtime-core' {
     ElTabPane: typeof import('element-plus/es')['ElTabPane']
     ElTabs: typeof import('element-plus/es')['ElTabs']
     ElTag: typeof import('element-plus/es')['ElTag']
-    ElTimePicker: typeof import('element-plus/es')['ElTimePicker']
-    ElTooltip: typeof import('element-plus/es')['ElTooltip']
-    ElUpload: typeof import('element-plus/es')['ElUpload']
     IconParkSolidMenuFoldOne: typeof import('~icons/icon-park-solid/menu-fold-one')['default']
     IconParkSolidMenuUnfoldOne: typeof import('~icons/icon-park-solid/menu-unfold-one')['default']
     IconParkSolidUser: typeof import('~icons/icon-park-solid/user')['default']
-    MakeDown: typeof import('./../components/MakeDown/index.vue')['default']
     MarkDown: typeof import('./../components/MarkDown/index.vue')['default']
-    Pagination: typeof import('./../components/ProTable/components/Pagination.vue')['default']
-    ProTable: typeof import('./../components/ProTable/index.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     TableColumn: typeof import('./../components/BasicTable/components/TableColumn.vue')['default']
     TagPie: typeof import('./../components/Echarts/TagPie.vue')['default']
     TopArticle: typeof import('./../components/Echarts/TopArticle.vue')['default']
-  }
-  export interface ComponentCustomProperties {
-    vLoading: typeof import('element-plus/es')['ElLoadingDirective']
   }
 }
