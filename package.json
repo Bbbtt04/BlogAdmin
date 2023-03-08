@@ -6,7 +6,7 @@
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
-    "lint": "eslint --fix --ext .js,.jsx,.ts,.tsx,.vue src"
+    "lint": "eslint --fix --ext .js,.jsx,.ts,.tsx,.vue src src/**/*.{js,jsx,ts,tsx,vue} src/*"
   },
   "dependencies": {
     "@kangc/v-md-editor": "^2.3.15",

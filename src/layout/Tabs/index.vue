@@ -21,7 +21,6 @@ const addTab = (route) => {
     tabsMenuList.value.push(currentRoute.value)
     if(route.isKeepAlive) {
       keepAliveStore.addKeepAlive(route.name)
-      console.log(keepAliveStore.getKeepAliveList);
     }
   }
 }
@@ -45,8 +44,6 @@ const handleClose = (tab) => {
   const nextPage = index === 0 ? tabsMenuList.value[index + 1].path : tabsMenuList.value[index - 1].path
   keepAliveStore.removeKeepAlive(tabsMenuList.value[index].name)
   // log
-  console.log(keepAliveStore.getKeepAliveList);
-
   tabsMenuList.value.splice(index, 1)
   router.push(nextPage)
 }

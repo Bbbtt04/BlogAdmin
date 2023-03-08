@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { getArticleList } from '@/api/modules/article'
 import { getInfo } from '@/api/modules/site'
 import DataCard from './components/DataCard.vue'
 import ArticleData from './components/ArticleData.vue'
@@ -21,9 +20,6 @@ async function getInitData() {
 onMounted(() => {
   getInitData().then(() => {
     loading.value = false
-  })
-  getArticleList({ pageSize: 5, sortBy: 'views' }).then((res) => {
-    console.log(res)
   })
 })
 </script>

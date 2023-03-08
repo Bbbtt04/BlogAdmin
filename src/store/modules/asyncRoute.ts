@@ -45,7 +45,6 @@ export const useAsyncRoute = defineStore('asyncRoute', {
       let accessedRoutes: RouteRecordRaw[] = []
       // 从后端获取路由
       accessedRoutes = filterRoutes(data.roles, asyncRoutes)
-      console.log('accessedRoutes', accessedRoutes)
 
       return accessedRoutes
     },

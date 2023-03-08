@@ -14,8 +14,6 @@ export function useTable(requestApi: (params: any) => Promise<any>) {
       pageSize: pagination.pageSize,
       ...query,
     })
-    console.log("🚀 ~ file: useTable.ts ~ line 20 ~ getList ~ data", data);
-    
     tableData.value = data.list || data
     total.value = data.count
   }

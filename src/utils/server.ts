@@ -21,7 +21,6 @@ request.interceptors.response.use(
     const { data } = response
     if (data.success) {
       //  ElMessage.success(data.message)
-      console.log('请求成功')
     }
     else { ElMessage.error(data.message) }
 

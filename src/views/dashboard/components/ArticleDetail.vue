@@ -30,7 +30,6 @@ const list: any = ref([])
 onMounted(async () => {
   const data: any = await getArticleList({ pageSize: 5, sortBy: 'createdAt' })
   list.value = data.data.list
-  console.log(list.value)
 })
 </script>
 

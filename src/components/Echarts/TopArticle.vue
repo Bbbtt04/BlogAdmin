@@ -18,8 +18,6 @@ const COLOR = [
 
 onMounted(() => {
   getArticleList({ pageSize: 5, sortBy: 'views' }).then((res) => {
-    console.log(res)
-
     setOptions({
       grid: {
         top: '8%',
